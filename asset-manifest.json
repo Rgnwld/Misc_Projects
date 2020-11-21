@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/borderradius/static/css/main.f9387085.chunk.css",
-    "main.js": "/borderradius/static/js/main.f69b83a5.chunk.js",
-    "main.js.map": "/borderradius/static/js/main.f69b83a5.chunk.js.map",
-    "runtime-main.js": "/borderradius/static/js/runtime-main.287b07f6.js",
-    "runtime-main.js.map": "/borderradius/static/js/runtime-main.287b07f6.js.map",
-    "static/js/2.493ae39d.chunk.js": "/borderradius/static/js/2.493ae39d.chunk.js",
-    "static/js/2.493ae39d.chunk.js.map": "/borderradius/static/js/2.493ae39d.chunk.js.map",
-    "index.html": "/borderradius/index.html",
-    "static/css/main.f9387085.chunk.css.map": "/borderradius/static/css/main.f9387085.chunk.css.map",
-    "static/js/2.493ae39d.chunk.js.LICENSE.txt": "/borderradius/static/js/2.493ae39d.chunk.js.LICENSE.txt"
+    "main.css": "/StudyProjects/static/css/main.f9387085.chunk.css",
+    "main.js": "/StudyProjects/static/js/main.f69b83a5.chunk.js",
+    "main.js.map": "/StudyProjects/static/js/main.f69b83a5.chunk.js.map",
+    "runtime-main.js": "/StudyProjects/static/js/runtime-main.802a338e.js",
+    "runtime-main.js.map": "/StudyProjects/static/js/runtime-main.802a338e.js.map",
+    "static/js/2.493ae39d.chunk.js": "/StudyProjects/static/js/2.493ae39d.chunk.js",
+    "static/js/2.493ae39d.chunk.js.map": "/StudyProjects/static/js/2.493ae39d.chunk.js.map",
+    "index.html": "/StudyProjects/index.html",
+    "static/css/main.f9387085.chunk.css.map": "/StudyProjects/static/css/main.f9387085.chunk.css.map",
+    "static/js/2.493ae39d.chunk.js.LICENSE.txt": "/StudyProjects/static/js/2.493ae39d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.287b07f6.js",
+    "static/js/runtime-main.802a338e.js",
     "static/js/2.493ae39d.chunk.js",
     "static/css/main.f9387085.chunk.css",
     "static/js/main.f69b83a5.chunk.js"
