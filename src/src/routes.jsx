@@ -1,26 +1,35 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import Header from "./Components/Header/Header";
 import DecToBin from "./Components/DecToBinary_srcFiles/DecToBin";
 import StopWatch from "./Components/stopwatch_srcFiles/Stopwatch";
 import BorderRadius from "./Components/borderRadius_srcFiles/borderRadius";
 
 export default function App() {
+    const [page, setPage] = useState({ n: 1, url: <StopWatch /> });
+
+    function handleCallback(e) {
+        console.log(e);
+        console.log(page);
+        setPage({ ...page, n: e });
+    }
+
+    useEffect(() => {
+        switch (page.n) {
+            case 1:
+                setPage({ ...page, url: <StopWatch /> });
+                break;
+            case 2:
+                setPage({ ...page, url: <BorderRadius /> });
+                break;
+            case 3:
+                setPage({ ...page, url: <DecToBin /> });
+                break;
+        }
+    }, [page.n]);
     return (
-        <Router>
-            <Switch>
-                <Route exact path="/BorderRadius">
-                    <BorderRadius />
-                </Route>
-                <Route exact path="/DecToBin">
-                    <DecToBin />
-                </Route>
-                <Route exact path="/StopWatch">
-                    <StopWatch />
-                </Route>
-                <Route path="/">
-                    <Redirect push to="/BorderRadius" />
-                </Route>
-            </Switch>
-        </Router>
+        <>
+            <Header callback={handleCallback.bind(this)} />
+            {page.url}
+        </>
     );
 }

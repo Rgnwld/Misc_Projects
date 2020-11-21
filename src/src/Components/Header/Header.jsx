@@ -1,14 +1,25 @@
 import React from "react";
 import "./styles.css";
 
-function Header() {
+function Header(props) {
+    function handleOnClick(e, node) {
+        node.preventDefault();
+        props.callback(e);
+    }
+
     return (
         <header>
             <div className="navbar">
                 <p>&#x2630;</p>
-                <a href="/stopwatch">Stop Watch</a>
-                <a href="/borderradius">Border Radius</a>
-                <a href="dectobin">Decimal to binary</a>
+                <a href="" onClick={handleOnClick.bind(this, 1)}>
+                    Stop Watch
+                </a>
+                <a href="" onClick={handleOnClick.bind(this, 2)}>
+                    Border Radius
+                </a>
+                <a href="" onClick={handleOnClick.bind(this, 3)}>
+                    Decimal to binary
+                </a>
                 <a href="https://github.com/Rgnwld" rel="noreferrer" target="_blank">
                     <svg
                         className="octicon octicon-mark-github v-align-middle"

@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-class App extends React.Component {
+class Stopwatch extends React.Component {
     constructor(props) {
         super(props);
         this.displayData = [];
@@ -110,4 +110,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default Stopwatch;
