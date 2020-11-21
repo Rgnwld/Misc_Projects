@@ -1,0 +1,67 @@
+.page_stopwatch {
+    background-color: #262020;
+    color: #f2e9e9;
+
+    min-height: 100vh;
+
+    .block {
+        padding: 1rem 8rem;
+
+        .clockProperties {
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #594e4d;
+
+            button {
+                font-size: 25px;
+                margin: 5px 5px 10px 0;
+                padding: 4px;
+                border: 0px;
+                border-bottom: 2px solid #f2e9e9;
+                background-color: #262020;
+                color: #f2e9e9;
+                transition: all 0.2s;
+                outline: none;
+
+                &:hover {
+                    background-color: #f2e9e9;
+                    color: #262020;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .clock {
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+            margin-right: 20px;
+        }
+
+        #laps {
+            border-top: 2px solid #594e4d;
+            max-height: 20rem;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                width: 12px;
+            }
+
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        #laps div {
+            border-bottom: 2px solid #594e4d;
+        }
+
+        #laps div h2 {
+            margin-left: 20px;
+        }
+    }
+}

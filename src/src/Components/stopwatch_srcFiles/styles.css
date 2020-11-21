@@ -1,0 +1,76 @@
+.page_stopwatch {
+  background-color: #262020;
+  color: #f2e9e9;
+  min-height: 100vh;
+}
+
+.page_stopwatch .block {
+  padding: 1rem 8rem;
+}
+
+.page_stopwatch .block .clockProperties {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #594e4d;
+}
+
+.page_stopwatch .block .clockProperties button {
+  font-size: 25px;
+  margin: 5px 5px 10px 0;
+  padding: 4px;
+  border: 0px;
+  border-bottom: 2px solid #f2e9e9;
+  background-color: #262020;
+  color: #f2e9e9;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.page_stopwatch .block .clockProperties button:hover {
+  background-color: #f2e9e9;
+  color: #262020;
+  cursor: pointer;
+}
+
+.page_stopwatch .block .clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.page_stopwatch .block #laps {
+  border-top: 2px solid #594e4d;
+  max-height: 20rem;
+  overflow-y: scroll;
+}
+
+.page_stopwatch .block #laps::-webkit-scrollbar {
+  width: 12px;
+}
+
+.page_stopwatch .block #laps::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.page_stopwatch .block #laps::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.page_stopwatch .block #laps div {
+  border-bottom: 2px solid #594e4d;
+}
+
+.page_stopwatch .block #laps div h2 {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=styles.css.map */

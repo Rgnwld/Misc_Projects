@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
+.page_borderRadius {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+  min-height: 100vh;
+  background: #0f0526;
+  font-family: "Source Code Pro", monospace;
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+}
+
+.page_borderRadius .border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30%;
+  border: 3px solid #51818c;
+  color: #51818c;
+  padding: 8rem 5rem;
+  background-color: #1c0c40;
+}
+
+.page_borderRadius .border input[type="button"] {
+  margin-top: 1rem;
+  background-color: #1c0c40;
+  border: solid 2px #77a6a6;
+  padding: 5px;
+  color: #77a6a6;
+  cursor: pointer;
+}
+
+.page_borderRadius .border input[type="button"]:hover {
+  background-color: #77a6a6;
+  color: #1c0c40;
+}
+
+.page_borderRadius #typeinp {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  -webkit-transition: 0.2s;
+  /* 0.2 seconds transition on hover */
+  outline-color: #77a6a6;
+  background-color: #f2f2f2;
+}
+
+.page_borderRadius #typeinp::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 15px;
+  /* Set a specific slider handle width */
+  height: 15px;
+  /* Slider handle height */
+  background: #77a6a6;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.page_borderRadius #typeinp::-moz-range-thumb {
+  width: 15px;
+  /* Set a specific slider handle width */
+  height: 15px;
+  /* Slider handle height */
+  border-radius: 0;
+  border: 2px solid #77a6a6;
+  background: #77a6a6;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.page_borderRadius #textCopy {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
