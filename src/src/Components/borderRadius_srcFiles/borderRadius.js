@@ -16,6 +16,20 @@ function BorderRadius() {
         borderEl.style.borderBottomRightRadius = e.bottomR + "px";
     }
 
+    function handleOnClick(e) {
+        function handler(event) {
+            event.clipboardData.setData("text/plain", document.getElementById("textCopy").value);
+
+            event.preventDefault();
+
+            document.removeEventListener("copy", handler, true);
+        }
+
+        document.addEventListener("copy", handler, true);
+
+        document.execCommand("copy");
+    }
+
     function handleOnChange(e) {
         const { name, value } = e.target;
         setBorder({ ...border, [name]: value });
@@ -77,11 +91,16 @@ function BorderRadius() {
                     />
                 </div>
 
-                <input type="button" value="copy to clipboard"></input>
+                <input type="button" onClick={handleOnClick.bind(this)} value="copy to clipboard"></input>
 
                 <textarea
-                    id="textCopy"
+                    onFocus={() => {
+                        console.log("c");
+                        document.execCommand("selectAll", false, null);
+                        document.execCommand("copy");
+                    }}
                     readOnly
+                    id="textCopy"
                     value={`border-top-left-radius: ${border.topL};
                     border-top-Right-radius: ${border.topR};
                     border-bottom-left-radius: ${border.bottomL};
