@@ -2,5 +2,5 @@
 
 Repositorio feito apenas para testes praticos.
 
-[https://rgnwld.github.io/StudyProjects/](Click Aqui para acessar a página)
+[Click aqui para acessar a página](https://rgnwld.github.io/StudyProjects/)
 
